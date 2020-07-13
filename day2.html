@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <title>Javascript Essentials</title>
+</head>
+<body>
+    <h1>Assignment-1</h1>
+    <script> 
+        
+        var today = new Date(),
+        day = today.getDay(),
+        days = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+        document.write('Today is : ' + days[day] + '.\n');
+
+        var hours = today.getHours(), 
+        minutes = today.getMinutes(), 
+        seconds = today.getSeconds(),
+        yyyy = today.getFullYear(),
+        dd = today.getDate(),
+        mm = today.getMonth();
+        if(dd<10){
+            dd='0'+dd;
+        }
+        if(mm<10){
+            mm='0'+mm;
+        }
+        if (hours >= 12) {
+           
+            hours += " PM";
+         } 
+        else {
+            hours += " AM";
+        }
+        
+        document.write("\n Current time is : " + hours + " : " + minutes + " : " + seconds);
+        document.write("\n"+mm+'-'+dd+'-'+yyyy+', '+ mm+'/'+dd+'/'+yyyy+', '+dd+'-'+mm+'-'+yyyy+', '+dd+'/'+mm+'/'+yyyy);
+
+    </script><br>
+    <button onclick="window.print()"> PRINT </button> 
+</body>
+
+</html>
