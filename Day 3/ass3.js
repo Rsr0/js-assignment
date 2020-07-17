@@ -11,7 +11,7 @@ console.log(`The OS name is ${arr[0]} and version is ${arr[1]}`);
 
 //Solution 3
 let marks=Number(prompt("Enter  the Marks (out of 100):"));
-
+var grade;
 //Using if-elseif-else
 if(marks<61 && marks>50){
   grade='A';
@@ -27,20 +27,18 @@ else{
 }
 
 //Using Ternary operator
-grade=(marks<61 && marks>50)?'A':(marks<=50 && marks>40)?'B':(marks<=40 && marks>30)?'C':'D';
+grade=(marks<61 && marks>50)?'A':(c)?'B':(marks<=40 && marks>30)?'C':'D';
 
 
 //Using Switch
-switch(marks){
-    case(60):grade='A';
+switch(1){
+    case(marks<61 && marks>50):grade='A';
               break;
-    case(50):grade='B';
+    case(marks<61 && marks>50):grade='B';
               break;
-    case(40):grade='C';
+    case(marks<=40 && marks>30):grade='C';
               break;
-    case(30):grade='D';
-              break;
-  default: grade='E';
+  default: grade='D';
 }
 
 console.log(`Marks are ${marks} & grade is ${grade}`);
