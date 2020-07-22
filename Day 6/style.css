@@ -1,0 +1,39 @@
+.black,button{
+    background-color:black;
+    color: whitesmoke;
+    
+}
+
+
+body{
+    text-align: center;
+}
+.white{
+    background-color:whitesmoke;
+    color: black;
+
+}
+
+button{
+    margin-top: 20px;
+    font-size: medium;
+    font-family: cursive;
+    border-radius: 10%;
+}
+
+#time{
+    color:maroon;
+    background-color:wheat;
+   
+    font-weight:700;
+    padding:1px 5px;
+}
+
+.table{margin-top: 20px;
+   /* background-color:lightskyblue;
+   color:brown; */
+   margin-right: 80%;
+   text-align: center;
+   padding: 5px 0px;
+
+}
